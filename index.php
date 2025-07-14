@@ -2,37 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- font awesome -->
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/defbdbe434.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <h1>Let's Find Out Your Age!</h1>
-        <div id="dob">
-            <h3>Date of Birth</h3>
-            <input type="date">
-        </div>
-        <br>
-        <div id="current-date">
-            <h3>Current Date</h3>
-            <input type="date">
-        </div>
 
-        <div class="buttons">
-            <button><i class="fa-solid fa-calculator"></i> Calculate</button>
-            <button><i class="fas fa-recycle"></i></i> Reset</button>
-        </div>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+            </div>
+
+            <div class="input-group">
+                <label for="current-date">Current Date</label>
+                <input type="date" id="current-date" name="current_date" required />
+            </div>
+
+            <div class="buttons">
+                <button type="submit">
+                    <i class="fa-solid fa-calculator"></i> Calculate
+                </button>
+                <button type="reset">
+                    <i class="fas fa-recycle"></i> Reset
+                </button>
+            </div>
+        </form>
 
         <div class="years">
-            <div>Years</div>
-            <div>Months</div>
-            <div>Dates</div>
+            <div>
+                <strong>0</strong> Years
+            </div>
+            <div>
+                <strong>0</strong> Months
+            </div>
+            <div>
+                <strong>0</strong> Days
+            </div>
         </div>
     </div>
 </body>
