@@ -1,0 +1,36 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: black;
+  height: 500px;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  width: 600px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+#dob,
+#current-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dob input,
+#current-date input {
+  width: 350px;
+  padding: 10px;
+  font-size: 20px;
+}
