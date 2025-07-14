@@ -5,7 +5,7 @@ body {
   align-items: center;
   margin: auto;
   background-color: black;
-  height: 500px;
+  height: 700px;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 }
 
 .container h1 {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
 
@@ -33,4 +33,35 @@ body {
   width: 350px;
   padding: 10px;
   font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px auto;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #1b3c53;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.years {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.years div {
+  background-color: #d7d7d7;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
 }

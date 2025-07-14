@@ -23,6 +23,17 @@
             <h3>Current Date</h3>
             <input type="date">
         </div>
+
+        <div class="buttons">
+            <button><i class="fa-solid fa-calculator"></i> Calculate</button>
+            <button><i class="fas fa-recycle"></i></i> Reset</button>
+        </div>
+
+        <div class="years">
+            <div>Years</div>
+            <div>Months</div>
+            <div>Dates</div>
+        </div>
     </div>
 </body>
 
