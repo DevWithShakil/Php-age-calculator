@@ -1,3 +1,5 @@
+<?php require 'calculate.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,36 +15,41 @@
     <div class="container">
         <h1>Let's Find Out Your Age!</h1>
 
-        <form action="#" method="post">
+        <form action="" method="post">
             <div class="input-group">
                 <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" name="dob" required />
+                <input type="date" id="dob" name="dob" value="<?php echo htmlspecialchars($dob); ?>" required />
             </div>
 
             <div class="input-group">
                 <label for="current-date">Current Date</label>
-                <input type="date" id="current-date" name="current_date" required />
+                <input type="date" id="current-date" name="current_date"
+                    value="<?php echo htmlspecialchars($current_date); ?>" required />
             </div>
 
             <div class="buttons">
                 <button type="submit">
                     <i class="fa-solid fa-calculator"></i> Calculate
                 </button>
-                <button type="reset">
+                <button type="reset" onclick="window.location.href='index.php';">
                     <i class="fas fa-recycle"></i> Reset
                 </button>
             </div>
         </form>
 
+        <?php if (!empty($error)) : ?>
+        <p style="color: red;"><?php echo $error; ?></p>
+        <?php endif; ?>
+
         <div class="years">
             <div>
-                <strong>0</strong> Years
+                <strong><?php echo $years; ?></strong> Years
             </div>
             <div>
-                <strong>0</strong> Months
+                <strong><?php echo $months; ?></strong> Months
             </div>
             <div>
-                <strong>0</strong> Days
+                <strong><?php echo $days; ?></strong> Days
             </div>
         </div>
     </div>
